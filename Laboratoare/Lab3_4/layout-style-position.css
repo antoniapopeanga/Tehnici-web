@@ -1,0 +1,64 @@
+aside{
+    width:15%;
+    float:right;
+    clear:right;
+    background: #FAF4B7;
+    position:absolute;
+    top:15%;
+    height:80%;
+    right: 0;
+}
+
+nav{
+    float:left;
+    position:absolute;
+    width:15%;
+    height:80%;
+    background: #FAF4B7;
+    top: 15%;
+    left: 0;
+}
+
+header, footer {
+    position:absolute;
+    height:12%;
+   }
+   
+   header {
+    background: #CDF0EA;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  
+   }
+   
+   article {
+    height: 60%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    right: 20%;
+   }
+   
+   footer {
+     background: #F6C6EA;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+   }
+   body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+}
+
+   header, footer, article, nav, aside {
+     padding: 1em;
+   }
+   body {
+  position: relative;
+  margin: 0;
+}
+   

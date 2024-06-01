@@ -1,0 +1,100 @@
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .robot {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr 3fr 3fr;
+    grid-template-columns:3fr 3fr 3fr;
+    grid-template-areas:"robot_eyes robot_socket robot_eye robot_pupil robot_eye robot_pupil  "
+
+    "robot_mouth robot_tooth strungareata";
+    align-items: center;
+    background: #a6b4c4;
+    background-image: radial-gradient(#a6b4c4,#59798e);
+  }
+  
+  .robot_eyes {
+    width: 400px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 200px;
+    position: relative;
+    display: grid;
+    grid-row:1/5; 
+    grid-column:2/3;
+  }
+  
+  .robot_socket {
+    width: 375px;
+    height: 125px;
+    border: 3px solid black;
+    border-radius: 200px;
+    background: black;
+    overflow: hidden;
+    display: grid;
+    grid-column:2/3;
+    grid-row:3/5;
+    grid-template-columns: repeat(2, 1fr);
+  
+  }
+  
+  .robot_eye {
+    height: 145px;
+    width: 145px;
+    background-color: #fefbb8;
+    border-radius: 100%;
+    margin: -10px 10px 0px 20px;
+    position: relative;
+    display: grid;
+  
+
+  }
+  .robot_pupil {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    grid-column:2/3;
+    grid-row:3/5;
+  }
+  
+  .robot_mouth {
+    width: 275px;
+    height: 100px;
+    background-color: black;
+    margin-top: 80px;
+    border-radius: 50px;
+    border: 4px solid black;
+    position: relative;
+    display: grid;
+    grid-column:2/3;
+    grid-row:4/5;
+    grid-template-columns: repeat(8, 1fr);
+    overflow:hidden;
+    margin-left:50px;
+  }
+  
+  .robot_tooth {
+    height: 46px;
+    width: 30px;
+    background-color: #fefbb8;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .strungareata{
+    height: 50px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    position:absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+
+
+  }
+  
