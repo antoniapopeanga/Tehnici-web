@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Lobster+Two&display=swap');
+a {
+  text-decoration: none;
+  color:black;
+  font-weight: lighter;
+}
+
+
+h1 {
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-family: 'Fasthand';
+  font-size: 4vw;
+}
+
+main {
+  padding-bottom: 3vw;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10vw;
+  padding: 0.3vw;
+  background-color: #f7f5f5;
+}
+
+
+.dropdown {
+  background-color: #f7f5f5;
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 1vw;
+  top: 3vw;
+  list-style: none;
+  z-index:1;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 5em;
+  text-align: center;
+}
+
+li:hover .dropdown {
+  display: block;
+}
+
+.meniu {
+  display: flex;
+  gap: 4em;
+  font-family: 'Fasthand';
+  font-size: 2vw;
+  list-style: none;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+}
+
+.logo {
+  height: 5%;
+  max-height: 8vw;
+  width: auto;
+  margin-right: 1vw;
+}
+
+
+.meniu li:hover {
+  background-color: #eaeaea;
+  border-radius: 1vw;
+  transition: 0.3s ease;
+}
+
+.sectiuni_meniu {
+  color: black;
+  font-weight: bolder;
+}
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 45vw;
+  overflow: hidden;
+}
+
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation-name: slide;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+
+.slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slider img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slider img:nth-child(3) {
+  animation-delay: 8s;
+}
+.slider img:nth-child(4) {
+  animation-delay: 12s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  5% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+
+body {
+  background-color: #f7f5f5;
+  margin: 0;
+}
+
+.meniu_lateral {
+  width: 140px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(239, 230, 233, 0.7);
+}
+
+.meniu_lateral ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+
+.textmeniu {
+  font-weight: bolder;
+  color: black;
+}
+
+.meniu_lateral li{
+  text-decoration: none;
+  font-size: 25px;
+  list-style:none;
+  font-family: 'Fasthand';
+  text-align: center;
+
+}
+
+.meniu_lateral a:hover {
+  color:#e2dada;
+}
+
+.fa.fa-plane{
+  font-size:40px;
+}
+.fa.fa-globe{
+  font-size:40px;
+}
+.fa.fa-camera-retro{
+  font-size:40px;
+}
+.fa.fa-institution{
+  font-size:40px;
+}
+.fa.fa-map{
+  font-size:40px;
+}
+.fa.fa-cutlery{
+  font-size:40px;
+}
+@media screen and (max-height: 450px) {
+  .meniu_lateral {padding-top: 15px;}
+  .meniu_lateral a {font-size: 18px;}
+}
+
+
+.gallery {
+  margin-top: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  gap: 2vw;
+}
+
+.gallery a {
+  display: block;
+  width: 32vw;
+  height: 26vw;
+  overflow: hidden;
+  border: 0.1vw solid #ddd;
+}
+
+.gallery a:hover img {
+  transform: scale(1.1);
+}
+
+.polaroid {
+  position: relative;
+  display: inline-block;
+  margin: 1vw;
+  padding: 1vw;
+  background-color: white;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.3);
+}
+.polaroid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1vw solid white;
+  transition: transform 0.3s;
+}
+
+
+.polaroid .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 92%;
+  padding: 1vw;
+  background-color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: 'Fasthand';
+}
+#newsletter{
+  margin-left:12vw;
+  font-family:'Fasthand';
+}
+#newsletter h2{
+font-size:1.7vw;
+}
+#newsletter p{
+  font-size:1.3vw;
+  }
+button {
+  background-image: linear-gradient(to right, #d79393, #EDD0D0);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #EDD0D0, #d79393);
+}
+
+footer {
+  background-color:#f7f5f5;
+  border: 1vw #f2dee4;
+  border-style:double;
+  color: black;
+  font-size: 1vw;
+  font-family: 'Lobster Two';
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer h4 {
+  margin-top: 2vw;
+  margin-bottom:1vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 1vw;
+  margin-top: 0;
+  text-align: center;
+
+}
+
+
+
+.container {
+  max-width: 78vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.col-md-6 {
+  width: 25%;
+  box-sizing: border-box;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .col-md-6 {
+    width: 33.33%;
+  }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+
+  .meniu_lateral li {
+    font-size: 20px;
+  }
+
+  .gallery a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+
+  .meniu_lateral {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  .meniu_lateral li {
+    font-size: 16px;
+  }
+
+  .gallery a {
+    width: 100%;
+    height: 300px;
+  }
+
+  .polaroid .caption {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+#counter{
+  margin-left: 28vw;
+  margin-right: 28vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Fasthand';
+  text-align: center;
+
+}
+.galerie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vw;
+}
+
+.galerie img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.nav-buttons button {
+  margin: 0 1vw;
+}
+
+
+
+#name {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Fasthand';
+  width: fit-content;
+  opacity: 0;
+  border-radius: 5px;
+  border: 3px solid rgba(225, 149, 174, 0.7);
+  padding: 0px 5px;
+  font-size: 1.2rem;
+  z-index:1;
+
+}
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:2vw;
+  height: auto;
+}
+#plane {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: rotate(35deg);
+}
+#objectives-container{
+  margin-left: 15vw;
+  margin-right:60vw;
+  margin-bottom: 2vw;
+  background-color: #f2dee4;
+  font-family: 'Fasthand';
+  font-size: larger;
+
+}
+
+@media (max-width: 768px) {
+  .meniu {
+    display: flex;
+    gap: 2em;
+    font-family: 'Fasthand';
+    font-size: 3vw;
+    list-style: none;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+  }
+  .dropdown {
+    background-color: #f7f5f5;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 1vw;
+    top: 3vw;
+    list-style: none;
+    z-index:1;
+  }
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 5em;
+    text-align: center;
+  }
+  
+  li:hover .dropdown {
+    display: block;
+  }
+  .meniu li:hover {
+    background-color: #eaeaea;
+    border-radius: 1vw;
+    transition: 0.3s ease;
+  }
+  .galerie {
+    margin-top:23vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vw;
+  }
+  .galerie img {
+    max-width: 100%;
+    max-height: 80vw;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+  #counter{
+  margin-left: 30vw;
+  margin-top: 25vw;
+  margin-bottom: 0;
+  font-family: 'Fasthand';
+  }
+
+  .logo {
+    height: 5%;
+    max-height: 11vw;
+    width: auto;
+    margin-right: 0vw;
+  }
+  .meniu_lateral {
+    display:none;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 3vw;
+    padding: 1vw;
+    background-color: #f7f5f5;
+  }
+  #newsletter h2{
+    font-size:3vw;
+    }
+    #newsletter p{
+      font-size:2.5vw;
+      }
+      input[type="email"] {
+        width: 30vw;
+        height: 2vw;
+      }
+    button{
+      width: 10vw;
+      height: 4vw;
+    }
+    button[type="submit"] {
+      font-size: 10px;
+    }
+
+      .polaroid {
+        position: relative;
+        display: inline-block;
+        margin: 1vw;
+        padding: 1vw;
+        width:50vw;
+        background-color: white;
+        box-shadow: 0 0 2vw rgba(0, 0, 0, 0.3);
+      }
+      .polaroid img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1vw solid white;
+        transition: transform 0.3s;
+      }
+      
+      
+      .polaroid .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 97%;
+        padding: 0.5vw;
+        background-color: white;
+        font-size: 2.4vw;
+        text-align: center;
+        font-family: 'Fasthand';
+      }
+      #objectives-container{
+        margin-left: 15vw;
+        margin-right:60vw;
+        background-color: #f2dee4;
+        font-family: 'Fasthand';
+        font-size: smaller;
+        width: 40vw;
+        height:auto;
+      
+      }
+      #map{
+        height:fit-content;
+        width: auto;
+      }
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .col-md-6 {
+        width: 25%;
+        box-sizing: border-box;
+        padding-left: 2vw;
+        padding-right: 2vw;
+      }
+      .container {
+        max-width: 100%;
+      }
+      footer p {
+        margin-bottom: 1vw;
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.5vw;
+      }
+      footer h4 {
+        margin-top: 2vw;
+        margin-bottom:1vw;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2vw;
+      }
+      #prevBtn{
+        margin-top:1vw;
+        font-size:10px;
+      }
+      #nextBtn{
+        margin-top:1vw;
+        font-size:10px;
+      }
+      #counter{
+        margin-top:23vw;
+        font-size: 12px;
+        text-align: center;
+      }
+}
