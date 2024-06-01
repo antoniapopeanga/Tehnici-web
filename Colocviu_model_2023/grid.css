@@ -1,0 +1,59 @@
+#wrapper div {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+  }
+  
+  #boxD {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #boxD div {
+    color: black;
+    background-color: pink;
+    flex-grow: 1;
+  }
+  
+  #wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-gap: 10px;
+    width: auto;
+  }
+  
+  #boxA {
+    grid-column: 1/3;
+  }
+  
+  #boxB {
+    grid-column: 3/5;
+  }
+  
+  #boxC {
+    grid-column: 1/3;
+  }
+  
+  #boxD {
+    grid-column: 3/5;
+  }
+  
+  #boxE {
+    width: 100%;
+  }
+  
+  #wrapper > div:nth-child(1),
+  #wrapper > div:nth-child(2),
+  #wrapper > div:nth-child(3),
+  #wrapper > div:nth-child(4) {
+    border: white dashed 2px;
+  }
+  
+  @media (max-width: 600px) and (min-width: 200px) {
+    #wrapper {
+      display: block;
+    }
+  }
+  
