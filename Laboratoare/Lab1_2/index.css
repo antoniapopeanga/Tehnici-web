@@ -1,0 +1,95 @@
+
+header{
+
+    font-family:'Courier New', Courier, monospace;
+    font-size:larger;
+    font-weight:bolder;
+    padding: 20px;
+    border-style:dashed;
+    border-color:rgb(212, 234, 254);
+    border-width: 10px;
+    background-color:rgb(225, 238, 249);
+}
+main{
+    color:rgb(42, 107, 164);
+    text-align:left;
+    font-size:larger;
+    line-height:1.5;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:aliceblue;
+    padding:50px;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    
+}
+h1{
+    font-size: 40px; 
+    font-weight: bold; 
+    text-align: left; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
+  
+}
+h3{
+    font-size: 20px; 
+    font-weight: bold; 
+    text-align: left; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+ol{
+    list-style:circle;
+    color:rgb(162, 192, 218);
+    font-weight: bold;
+    margin:20px;
+}
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:smaller;
+    font-weight:bold;
+    background-color:rgb(246, 252, 255);
+    padding:40px;
+    height:30px;
+    color:rgb(38, 101, 156);
+
+}
+body{
+    background-image:url("resources/1558033210-rainbow.png");
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+#titlu{
+    color:rgb(42, 107, 164);
+    margin:20px;
+    font-size:50px;
+    font-weight:bolder;
+}
+.meniu{
+    color:rgb(86, 161, 226);
+    text-decoration-line: none;
+    margin:20px;
+}
+.link{
+    color:rgb(182, 219, 251);
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+
+}
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+  }
+iframe {
+    width: 70%;
+    height: 600px; 
+    border: 2px solid #ccc;
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    margin-left: 70px;
+
+  }
